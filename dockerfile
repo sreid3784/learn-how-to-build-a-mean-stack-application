@@ -7,7 +7,7 @@ WORKDIR /usr/src/lafs-api
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY package*.json ./
+#COPY package*.json ./
 
 #stuff for web server start up
 #RUN npm install -g @angular/cli@v6-lts
@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 3000
 # Command used to start application
 
-CMD ng serve --host 0.0.0.0
+CMD npm run start
